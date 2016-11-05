@@ -7,6 +7,32 @@
 - eslint с конфигурацией airbnb для линтинга;
 - [plop](https://github.com/amwmedia/plop) для генерации шаблонных файлов.
 
+## Использование разработанных компонентов
+
+Добавляем в `package.json` набор разработанных компонентов:
+
+```json
+{
+	"dependencies": {
+		"ui-kit": "andrew--r/react-ui-kit-boilerplate"
+	}
+}
+```
+
+Импортируем нужные компоненты и стили:
+
+```javascript
+import Button from 'ui-kit/lib/Button'; // нестилизованный компонент
+import 'ui-kit/lib/Button.css'; // стили для компонента
+```
+
+Либо импортируем сразу все компоненты:
+
+```javascript
+import * as uiKit from 'ui-kit';
+import 'ui-kit/lib/index.css';
+```
+
 ## Рабочий процесс
 
 Подготовка к работе:

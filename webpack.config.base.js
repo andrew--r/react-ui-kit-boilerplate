@@ -9,7 +9,7 @@ console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 
 const SOURCE = './source';
 const COMPONENTS = `${SOURCE}/components`;
-const OUT = './build';
+const OUT = './lib';
 
 const extractStylus = new ExtractTextPlugin('[name].css');
 
