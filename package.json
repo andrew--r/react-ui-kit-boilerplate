@@ -1,7 +1,7 @@
 {
   "name": "react-ui-kit-boilerplate",
   "version": "1.0.0",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "author": "Andrew Romanov <me@andrew-r.ru>",
   "license": "MIT",
   "scripts": {
