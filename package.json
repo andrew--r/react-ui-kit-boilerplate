@@ -7,7 +7,7 @@
   "scripts": {
     "start": "styleguidist server",
     "build": "yarn build:bundle && yarn build:styleguide",
-    "build:bundle": "rm -rf build && ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --colors",
+    "build:bundle": "rm -rf lib && ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --colors",
     "build:styleguide": "styleguidist build",
     "lint": "./node_modules/.bin/eslint --ext .js --ext .jsx ./source",
     "plop": "plop"
