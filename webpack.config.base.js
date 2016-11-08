@@ -15,7 +15,7 @@ const extractStylus = new ExtractTextPlugin('[name].css');
 
 const componentsList = glob.sync(`${COMPONENTS}/*`).map(path => path.slice(COMPONENTS.length + 1));
 const componentsEntries = componentsList.reduce((acc, componentName) => {
-	acc[componentName] = [`${COMPONENTS}/${componentName}/index.jsx`, `${COMPONENTS}/${componentName}/index.styl`];
+	acc[componentName] = [`${COMPONENTS}/${componentName}/index.jsx`];
 	return acc;
 }, {});
 const entries = Object.assign({}, componentsEntries, {
